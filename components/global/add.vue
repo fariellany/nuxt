@@ -1,6 +1,9 @@
 
 <template>
-  <h1>公共组件add</h1>
+   <div>
+    <h1>公共组件add</h1>
+    <p>在global下的组件都是全局的，无需引入</p>
+  </div>
 </template>
 <script>
 export default {

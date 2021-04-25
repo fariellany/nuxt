@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'render',
+  // name: 'render',
   // // 函数组件
   // functional: true,
   // props: {

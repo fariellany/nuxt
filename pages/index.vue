@@ -5,8 +5,9 @@
       <h1 class="title">
         next
       </h1>
-      <parent></parent>
+      <!-- <parent></parent> -->
       <common></common>
+      <render-demo></render-demo>
     </div>
   </div>
 </template>
@@ -14,12 +15,15 @@
 <script lang="ts">
 import Vue from 'vue'
 import parent from '../components/data/parent.vue';
-// import common from './../components/global/common.vue';
+import renderDemo  from './../components/render/index.vue';
+
+// 注册全局组件
+Vue.component('render-demo', renderDemo)
+
+// Vue.use() 一般注册插件
 
 // 注册全局事件
-// window.eventBus = new Vue();
-
-// Vue.use(common)
+globalThis.eventBus = new Vue();
 
 export default Vue.extend({
   components:{
