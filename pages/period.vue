@@ -8,22 +8,30 @@ export default {
     },
     data() {
         console.log('data======>');
+        return {
+           name:'张三'
+         }
     },
     async asyncData() {
          console.log('async asyncData======>');
     },
+    // computed用来监控自己定义的变量，该变量不在data里面声明，直接在computed里面定义，
+    // 然后就可以在页面上进行双向数据绑定展示出结果或者用作其他处理；
     computed:{
        init(){
          console.log('computed');
        }
     },
     methods:{
-      // 必须要调用
       add(){
         console.log('methods');
       }
     },
     watch:{
+      // 监听必须的data里面已经声明了的
+      name:(newVal,oldVal)=>{
+
+      },
       add:()=>{
         console.log('watch 监听属性');
       }

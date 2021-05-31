@@ -23,7 +23,7 @@ Vue.component('render-demo', renderDemo)
 // Vue.use() 一般注册插件
 
 // 注册全局事件
-globalThis.eventBus = new Vue();
+// globalThis.eventBus = new Vue();
 
 export default Vue.extend({
   components:{
